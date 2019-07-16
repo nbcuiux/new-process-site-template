@@ -1,0 +1,5 @@
+.DS_Store
+node_modules
+src/video/
+build/
+package-lock.json

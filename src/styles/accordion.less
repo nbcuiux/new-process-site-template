@@ -1,0 +1,123 @@
+@import 'variables.less';
+
+.st-accordion{
+  &.accordion{
+  }
+  .accordion-item{
+    border-top: none!important;
+    position: relative;
+    overflow: hidden;
+    .article-title {
+      padding-top:30px !important;
+    }
+    li{
+      margin-bottom: 12px !important;
+      margin-left: 30px;
+      list-style-type: inherit!important;
+
+      p{
+        margin-bottom:0px;
+      }
+      ul,ol{
+        margin-top:12px;
+        margin-bottom:0px !important;
+      }
+    }
+
+    
+
+    
+  }
+  
+  .accordion-title{
+    cursor: pointer;
+    padding: 25px 50px 25px 0px;
+    position: relative;
+    font-size: 24px;
+    font-weight: 300;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+    background-color: #eee;
+    border-top: 1px solid rgba(255,255,255,.6) !important;
+    border-bottom: 1px solid rgba(255,255,255,.6) !important;
+    border-radius:0px;
+    margin-bottom: 0px !important;
+    margin-top:-1px;
+    display:block;
+    color: @color-accent!important;
+
+    &:first-child{
+      margin-top:0px;
+      border-top:none !important;
+    }
+    .ui-accordion-header-icon{
+      display:none;
+    }
+  }
+  .ui-state-default{
+    border:none;
+  }
+  .ui-state-hover{
+    border:none;
+  }
+  .ui-state-focus{
+    border:none;
+  }
+  .ui-state-active{
+    border-bottom: none !important;
+    .accordion-caret{
+      transform: rotateX(180deg);
+
+    }
+  }
+  .accordion-caret{
+    position: absolute;
+    right:-10px;
+    top: 0px;
+    font-size: 26px;
+    -webkit-transition: -webkit-transform ease-in 0.2s, color 0.4s, right 0.4s, opacity 0.4s;
+    -moz-transition: -moz-transform ease-in 0.2s, color 0.4s, right 0.4s, opacity 0.4s;
+    -webkit-transition: color 0.4s, opacity 0.4s, right 0.4s, -webkit-transform ease-in 0.2s;
+    transition: color 0.4s, opacity 0.4s, right 0.4s, -webkit-transform ease-in 0.2s;
+    transition: transform ease-in 0.2s, color 0.4s, opacity 0.4s, right 0.4s;
+    transition: transform ease-in 0.2s, color 0.4s, opacity 0.4s, right 0.4s, -webkit-transform ease-in 0.2s;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    height: 100%;
+    stroke: #fff;
+    stroke-width: 1.5px;
+    fill: transparent;
+    opacity: 0;
+  }
+}
+
+.st-accordion .ui-widget-content {
+  border:none!important;
+}
+
+.st-accordion .accordion-title:hover .accordion-caret{
+  opacity: 1;
+  right:51px;
+
+}
+.accordion-header{
+  .icon-header{
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(178,223,219, .5);
+  }
+}

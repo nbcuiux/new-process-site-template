@@ -1,0 +1,128 @@
+#side-nav nav .submenu dl dt {
+  padding-left: 44px;
+}
+#side-nav nav .submenu a {
+  padding-left: 68px;
+}
+#side-nav nav .submenu a.menu__item--upper {
+  padding-left: 44px;
+  font-weight: 700;
+}
+.nav_selected {
+  background-color: #eee!important;
+  color: #212121 !important;
+}
+.is-plain {
+  font-weight: 400!important;
+  color: #999999!important;
+}
+.menu__header {
+  border-left: 2px solid transparent;
+  color: #333;
+  font-weight: 700;
+  margin-top: 0;
+  padding: 15px 0 15px 22px;
+  cursor: pointer;
+}
+.menu__header.is-plain {
+  font-weight: 400!important;
+  color: #999999!important;
+  cursor: default;
+}
+.menu__list .menu__header {
+  padding-left: 44px;
+}
+.menu__header:active {
+  background: #eeeeee;
+}
+.menu__list {
+  overflow: hidden;
+}
+.menu__wrapper {
+  position: relative;
+}
+.is-closed > .menu__wrapper {
+  margin-top: -100%;
+  max-height: 0;
+  transition: 0.5s ease-out;
+}
+.is-open > .menu__wrapper {
+  margin-top: 0;
+  max-height: 100%;
+}
+.is-animatedOpen > .menu__wrapper {
+  margin-top: 0;
+  max-height: 100%;
+  transition: 0.5s ease-out;
+  transition-delay: 0;
+}
+.menu__item {
+  border-left: 2px solid transparent;
+  color: #333;
+  display: block;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  padding: 10px 24px 10px 46px;
+  white-space: nowrap;
+}
+.menu__item:active {
+  background: #eeeeee;
+}
+.menu__item.menu__item--upper {
+  border-left: 2px solid transparent;
+  color: #333;
+  font-weight: 700;
+  margin-top: 0;
+  padding: 15px 0 15px 22px;
+  cursor: pointer;
+}
+@keyframes collapse {
+  0% {
+    max-height: none;
+  }
+  100% {
+    max-height: 0;
+  }
+}
+.menu__header {
+  border-left: 2px solid transparent;
+  color: #333;
+  font-weight: 700;
+  margin-top: 0;
+  padding: 15px 0 15px 22px;
+  cursor: pointer;
+}
+.menu__header.is-plain {
+  font-weight: 400!important;
+  color: #999999!important;
+  cursor: default;
+}
+.menu__list .menu__header {
+  padding-left: 44px;
+}
+.menu__header:focus {
+  background-color: #eee!important;
+}
+.menu__header:active {
+  background-color: #eee!important;
+}
+.menu__item {
+  border-left: 2px solid transparent;
+  color: #333;
+  display: block;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  padding: 10px 24px 10px 46px;
+  white-space: nowrap;
+}
+.menu__item:focus {
+  background-color: #eee!important;
+}
+.menu__item.menu__item--upper {
+  border-left: 2px solid transparent;
+  color: #333;
+  font-weight: 700;
+  margin-top: 0;
+  padding: 15px 0 15px 22px;
+  cursor: pointer;
+}
